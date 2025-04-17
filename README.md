@@ -7,5 +7,7 @@
 
 # Deliverables
 1. A Python script reads FASTA files, accepts user input for k-mer length, calculates frequencies. The script includes logging of sequence counts processed and coverage status.
+
 2.  A sql file contains all DDL and DML statements to create and populate two tables for sample metadata and kmer frequencies
+
 3. A Bash script asks for input FASTA file and k-mer size, runs the Python script, and then populates the SQL database using the generated CSV files.
