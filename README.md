@@ -6,10 +6,23 @@
 3. Create a Bash shell script to automate the full pipeline
 
 # Deliverables
-1. A Python script reads FASTA files, accepts user input for k-mer length, calculates frequencies. The script includes logging of sequence counts processed and coverage status.
+1. **Python Script**
+   - Reads FASTA files.
+   - Accepts user input for k-mer length.
+   - Calculates k-mer frequencies.
+   - Logs:
+     - Number of sequences processed.
+     - Coverage status.
 
+2. **SQL File**
+   - Contains all necessary DDL (Data Definition Language) statements to:
+     - Create two tables: one for sample metadata and one for k-mer frequencies.
+   - Contains DML (Data Manipulation Language) statements to:
+     - Populate the tables using data generated from the Python script.
 
-2.  A sql file contains all DDL and DML statements to create and populate two tables for sample metadata and kmer frequencies
-
-
-3. A Bash script asks for input FASTA file and k-mer size, runs the Python script, and then populates the SQL database using the generated CSV files.
+3. **Bash Script**
+   - Prompts the user to:
+     - Enter the input FASTA file path.
+     - Specify the desired k-mer size.
+   - Executes the Python script.
+   - Populates the SQL database using the generated CSV files.
