@@ -1,4 +1,5 @@
 # BMI8540 Project 
+---
 # A Reproducible Pipeline for Identifying Fusobacterium nucleatum in Oral Microbiome Sequences Using k-mer Profiling and SQL Integration
 
 ## Abstract & Purpose
@@ -100,8 +101,7 @@ What are the differences in the k-mer frequency profiles associated with *Fusoba
      - Specify the desired k-mer size.
    - Executes the Python script.
    - Populates the SQL database using the generated CSV files.
-  
----
+
 
 ## Data Provenance
 - The Human Microbiome Project (HMP): https://portal.hmpdacc.org/
