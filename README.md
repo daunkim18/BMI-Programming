@@ -117,8 +117,6 @@ This research project introduces a new methodology that analyzes Fusobacterium n
 - Warnke-Sommer, J. D., & Ali, H. H. (2024). Evaluation of the Oral Microbiome as a Biomarker for Early Detection of Human Oral Carcinomas. *University of Nebraska Medical Center*.
 - Xiao, E., Wang, Y., & Li, X. (2023). Oral microbiota dysbiosis in oral cancer progression and its therapeutic implications. *Phenomics, 3*(2), 124–133. https://doi.org/10.1007/s43657-023-00124-y
 
-"""
-
 ## Privacy Statement
 
 The analysis in this project utilizes oral microbiome sequencing data that is publicly accessible from sources including the Human Microbiome Project and Kaggle.
@@ -128,4 +126,10 @@ The project's MySQL database avoids HIPAA, FERPA, and other data privacy regulat
 
 The project is designed exclusively for educational and research activities and follows ethical guidelines when utilizing openly accessible data.
 
+## License
+
+This project was developed as part of a graduate-level course, BMI8540, at the University of Nebraska at Omaha.  
+It is intended for educational purposes only and is not licensed for commercial use or public redistribution.
+
+For reuse or citation, please contact the author at daunkim@unomaha.edu.
 
