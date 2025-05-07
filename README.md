@@ -15,10 +15,10 @@ The project delivers a proof-of-concept tool for detecting oral carcinoma biomar
 
 The early data demonstrates that samples identified as oral carcinoma exhibit increased relative frequencies of k-mer patterns connected to Fusobacterium nucleatum which suggests its usefulness as a diagnostic microbial marker.
 
-# Objectives
-1. Develop a Python script that calculates k-mer frequency profiles from FASTA-format oral microbiome sequences
-2. Build and populate a MySQL database with sample metadata and corresponding k-mer frequency results.
-3. Create a Bash shell script to automate the full pipeline
+# Objectives / Goals
+1. Write a Python tool that analyzes k-mer frequencies within FASTA oral microbiome sequences to identify Fusobacterium nucleatum patterns.
+2. Create a MySQL database to store sample metadata together with k-mer frequencies that supports structured data queries and comparative analysis between cancer and control groups.
+3. By automating the entire pipeline through a Bash shell script you can process data inputs and populate databases while maintaining reproducibility and simplicity of use.
 
 # Deliverables
 1. **Python Script**
