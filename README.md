@@ -175,7 +175,7 @@ The project is designed exclusively for educational and research activities and 
 
 ## License
 
-his project is licensed under the [MIT License](./LICENSE).  
+This project is licensed under the [MIT License](./LICENSE).  
 You are free to use, modify, and distribute this software, provided that proper credit is given and the license terms are followed.
 
-For full details, see the LICENSE.txt file included in this repository.
+For full details, see the LICENSE file included in this repository.
