@@ -2,7 +2,7 @@
 
 ---
 
-## Abstract / Purpose
+## Abstract & Purpose
 Our project features a reproducible bioinformatics pipeline that investigates the oral microbiome for cancer biomarkers by specifically targeting Fusobacterium nucleatum (FN) which shows strong associations with oral carcinoma. The central research question is: K-mer frequency profiles from oral microbiome sequences could enable researchers to detect Fusobacterium nucleatum and determine its abundance as it relates to oral cancer.
 
 The solution comprises three fundamental components which work together in the pipeline.
@@ -19,7 +19,7 @@ The early data demonstrates that samples identified as oral carcinoma exhibit in
 
 ---
 
-## Objectives / Goals
+## Objectives & Goals
 1. Write a Python tool that analyzes k-mer frequencies within FASTA oral microbiome sequences to identify Fusobacterium nucleatum patterns.
 2. Create a MySQL database to store sample metadata together with k-mer frequencies that supports structured data queries and comparative analysis between cancer and control groups.
 3. By automating the entire pipeline through a Bash shell script you can process data inputs and populate databases while maintaining reproducibility and simplicity of use.
