@@ -175,8 +175,6 @@ The project is designed exclusively for educational and research activities and 
 
 ## License
 
-This project was developed as part of a graduate-level course, BMI8540, at the University of Nebraska at Omaha.  
-It is intended for educational purposes only and is not licensed for commercial use or public redistribution.
-
-For reuse or citation, please contact the author at daunkim@unomaha.edu.
+This project is distributed for educational purposes under an academic license.  
+See the [LICENSE.txt](./LICENSE.txt) file for full details.
 
