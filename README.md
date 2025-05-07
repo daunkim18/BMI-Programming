@@ -1,4 +1,4 @@
-# BMI8540 Project Title
+# BMI8540 Project 
 # A Reproducible Pipeline for Identifying Fusobacterium nucleatum in Oral Microbiome Sequences Using k-mer Profiling and SQL Integration
 
 ---
