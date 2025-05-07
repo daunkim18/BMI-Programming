@@ -105,6 +105,46 @@ What are the differences in the k-mer frequency profiles associated with *Fusoba
   
 ---
 
+## Data Provenance
+- The Human Microbiome Project (HMP): https://portal.hmpdacc.org/
+The Human Microbiome Project supplies de-identified 16S rRNA sequencing data with metadata that encompasses oral cavity samples along with health status information.
+
+- You can find the Human Oral Microbiome dataset among Kaggle's public datasets at https://www.kaggle.com/.
+Public individuals upload these datasets to Kaggle where they can be accessed for research and educational use according to Kaggle's data use guidelines.
+
+---
+
+## Users
+The project serves the following groups:
+
+1. **Bioinformatics Students and Educators**  
+- The project provides practical experience with microbiome data analysis techniques and SQL database design along with bash scripting automation.
+- Educational setting: coursework, labs, and reproducibility exercises.
+
+2. **Early-Career Researchers in Microbial Genomics or Oncology**  
+- People who want to find microbial biomarkers and study how microbiome composition relates to various diseases.
+- Researchers can use this tool during initial exploration projects or proof-of-concept testing.
+
+3. **Healthcare Data Science Enthusiasts**  
+- People who possess technical knowledge about Python or SQL programming are included in this context.
+- This tool serves as a foundational resource for researchers who want to investigate non-invasive diagnostic methods or merge data with existing public health datasets.
+
+---
+
+## Implementation Constraints
+- **Data Source Limitations**: Publicly available oral microbiome datasets serve as the foundation for this project. The presence of inconsistent metadata or limited annotations in these datasets affects the precision with which microbial signatures can be linked to disease status.
+
+- **Computational Constraints**: The analysis of k-mer frequencies demands substantial memory resources when working with large FASTA files. This pipeline functions optimally with small to medium datasets which are appropriate for educational and research prototype applications but unsuitable for extensive clinical deployment.
+
+- **Tooling Scope**: The project relies on fundamental Python programming, MySQL database management and Bash scripting without incorporating cloud deployment or complex workflow management systems like Snakemake or Nextflow.
+
+- **No Clinical Validation**: The project incorporates Fusobacterium nucleatu* as a biological marker but lacks clinical trial data and validated diagnostic standards. This project serves solely as a demonstration and learning tool.
+
+
+- **Manual Integration Step**: The process of importing the SQL database from CSV files is semi-automated but may need manual checks due to MySQL settings and system access rights.
+  
+---
+
 ## References
 
 - Badal, V. D., Balasubramanian, S., Sikaria, D., & Misra, V. (2020). Role of the gut microbiome in ageing and longevity: A systematic review. *Journal of Microbial Health and Aging, 6*(2), 123–135.
