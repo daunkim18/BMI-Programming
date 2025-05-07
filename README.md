@@ -116,6 +116,16 @@ This research project introduces a new methodology that analyzes Fusobacterium n
 - Johnson, T., & Williams, J. (2021). Statistical Methods in Microbiome Research. *Biostatistics Review, 18*(2), 101–120.
 - Warnke-Sommer, J. D., & Ali, H. H. (2024). Evaluation of the Oral Microbiome as a Biomarker for Early Detection of Human Oral Carcinomas. *University of Nebraska Medical Center*.
 - Xiao, E., Wang, Y., & Li, X. (2023). Oral microbiota dysbiosis in oral cancer progression and its therapeutic implications. *Phenomics, 3*(2), 124–133. https://doi.org/10.1007/s43657-023-00124-y
+
 """
+
+## Privacy Statement
+
+The analysis in this project utilizes oral microbiome sequencing data that is publicly accessible from sources including the Human Microbiome Project and Kaggle.
+The dataset contains no personal identifiers or protected health information (PHI) because it has undergone complete anonymization and de-identification.
+
+The project's MySQL database avoids HIPAA, FERPA, and other data privacy regulation requirements.
+
+The project is designed exclusively for educational and research activities and follows ethical guidelines when utilizing openly accessible data.
 
 
