@@ -1,7 +1,7 @@
 # BMI8540 Project 
----
 # A Reproducible Pipeline for Identifying Fusobacterium nucleatum in Oral Microbiome Sequences Using k-mer Profiling and SQL Integration
 
+---
 ## Abstract & Purpose
 Our project features a reproducible bioinformatics pipeline that investigates the oral microbiome for cancer biomarkers by specifically targeting Fusobacterium nucleatum (FN) which shows strong associations with oral carcinoma. The central research question is: K-mer frequency profiles from oral microbiome sequences could enable researchers to detect Fusobacterium nucleatum and determine its abundance as it relates to oral cancer.
 
