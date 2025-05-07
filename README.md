@@ -138,7 +138,7 @@ The project serves the following groups:
 
 - **Tooling Scope**: The project relies on fundamental Python programming, MySQL database management and Bash scripting without incorporating cloud deployment or complex workflow management systems like Snakemake or Nextflow.
 
-- **No Clinical Validation**: The project incorporates Fusobacterium nucleatu* as a biological marker but lacks clinical trial data and validated diagnostic standards. This project serves solely as a demonstration and learning tool.
+- **No Clinical Validation**: The project incorporates Fusobacterium nucleatum as a biological marker but lacks clinical trial data and validated diagnostic standards. This project serves solely as a demonstration and learning tool.
 
 
 - **Manual Integration Step**: The process of importing the SQL database from CSV files is semi-automated but may need manual checks due to MySQL settings and system access rights.
