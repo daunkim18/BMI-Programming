@@ -1,4 +1,4 @@
-## BMI-Programming
+## A Reproducible Pipeline for Identifying Fusobacterium nucleatum in Oral Microbiome Sequences Using k-mer Profiling and SQL Integration
 
 # Objectives
 1. Develop a Python script that calculates k-mer frequency profiles from FASTA-format oral microbiome sequences
