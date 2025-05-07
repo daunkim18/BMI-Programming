@@ -89,22 +89,24 @@ This research project introduces a new methodology that analyzes Fusobacterium n
    - Populates the SQL database using the generated CSV files.
   
 
-## Citation
-Badal, V. D., Balasubramanian, S., Sikaria, D., & Misra, V. 2020. “Role of the gut microbiome in ageing and longevity: A systematic review,” Journal of Microbial Health and Aging (6:2), pp. 123-135.
-Breiman, L. 2017. "Classification and Regression Trees," Routledge (First ed.), New York: Taylor & Francis.
-Bolyen, E., Rideout, J. R., Dillon, M. R., Bokulich, N. A., Abnet, C. C., Al-Ghalith, G. A., Alexander, H., Alm, E. J., Arumugam, M., & Asnicar, F. 2019. “Reproducible, interactive, scalable, and extensible microbiome data science using QIIME 2,” Nature Biotechnology (37:8), pp. 852-857.
-Chandrababu, R., & Bastola, A. 2022. "The role of oral microbiota in regulating host immune responses: A systems perspective," Oral Microbiology and Immunology (15:4), pp. 241-253.
-Chattopadhyay, I., Verma, M., & Panda, M. 2019. “Oral microbiome signatures in oral carcinoma: Diagnostic and therapeutic implications,” Journal of Oral Pathology and Medicine (48:6), pp. 474-482.
-Gopinath, D., Mahesh, S., & Muthu, K. (2020). The role of oral microbiota in oral cancer development: An insight into the inflammatory and immune-modulatory mechanisms. Frontiers in Immunology, 11, Article 591088. https://doi.org/10.3389/fimmu.2020.591088
-Kim, Suyeon, Thapa, Ishwor, & Ali, Hesham. 2024. “A novel computational approach for the mining of signature pathways using species co-occurrence networks in gut microbiomes,” BMC Microbiology (24), DOI: 10.1186/s12866-024-03633-6.
-Kostic, A. D., Chun, E., Robertson, L., Glickman, J. N., Gallini, C. A., Michaud, M., Clancy, T. E., Chung, D. C., Lochhead, P., Hold, G. L., El-Omar, E. M., Brenner, D., Fuchs, C. S., Meyerson, M., Giannakis, M., Garrett, W. S., & Huttenhower, C. (2013). Fusobacterium nucleatum potentiates intestinal tumorigenesis and modulates the tumor-immune microenvironment. Cell Host & Microbe, 14(2), 207–215. https://doi.org/10.1016/j.chom.2013.07.007
-Kostic, A. D., Gevers, D., Pedamallu, C. S., Michaud, M., Duke, F., Earl, A. M., ... & Huttenhower, C. 2013. “Genomic analysis identifies association
-Love, M. I., Huber, W., & Anders, S. 2014. "Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2," Genome Biology (15:12), pp. 550-565.
-Putri, G. H., Anders, S., Pyl, P. T., Pimanda, J. E., & Zanini, F. (2022). Analysing high-throughput sequencing data in Python with HTSeq 2.0. Bioinformatics, 38(10), 2943–2945. https://doi.org/10.1093/bioinformatics/btac166
-Rubinstein, M. R., Wang, X., Liu, W., Hao, Y., Cai, G., & Han, Y. W. (2019). Fusobacterium nucleatum promotes colorectal cancer by modulating E-cadherin/β-catenin signaling via its FadA adhesin. Cell Host & Microbe, 14(2), 207–215. https://doi.org/10.1016/j.chom.2013.07.007
-Srinivasan, K., et al. 2020. "Seasonal Effects of Humidity on Oral Microbiome Diversity," Journal of Oral Ecology (12:3), pp. 45-63.
-Johnson, T., & Williams, J. 2021. "Statistical Methods in Microbiome Research," Biostatistics Review (18:2), pp. 101-120.
-Warnke-Sommer, J. D., & Ali, H. H. 2024. “Evaluation of the Oral Microbiome as a Biomarker for Early Detection of Human Oral Carcinomas,” University of Nebraska Medical Center, Omaha, USA.
-Xiao, E., Wang, Y., & Li, X. (2023). Oral microbiota dysbiosis in oral cancer progression and its therapeutic implications. Phenomics, 3(2), 124-133. https://doi.org/10.1007/s43657-023-00124-y
+## References
+
+- Badal, V. D., Balasubramanian, S., Sikaria, D., & Misra, V. (2020). Role of the gut microbiome in ageing and longevity: A systematic review. *Journal of Microbial Health and Aging, 6*(2), 123–135.
+- Breiman, L. (2017). *Classification and Regression Trees*. Routledge, Taylor & Francis, New York.
+- Bolyen, E., Rideout, J. R., Dillon, M. R., Bokulich, N. A., Abnet, C. C., et al. (2019). Reproducible, interactive, scalable, and extensible microbiome data science using QIIME 2. *Nature Biotechnology, 37*(8), 852–857.
+- Chandrababu, R., & Bastola, A. (2022). The role of oral microbiota in regulating host immune responses: A systems perspective. *Oral Microbiology and Immunology, 15*(4), 241–253.
+- Chattopadhyay, I., Verma, M., & Panda, M. (2019). Oral microbiome signatures in oral carcinoma: Diagnostic and therapeutic implications. *Journal of Oral Pathology and Medicine, 48*(6), 474–482.
+- Gopinath, D., Mahesh, S., & Muthu, K. (2020). The role of oral microbiota in oral cancer development: An insight into the inflammatory and immune-modulatory mechanisms. *Frontiers in Immunology, 11*, Article 591088. https://doi.org/10.3389/fimmu.2020.591088
+- Kim, S., Thapa, I., & Ali, H. (2024). A novel computational approach for the mining of signature pathways using species co-occurrence networks in gut microbiomes. *BMC Microbiology, 24*. https://doi.org/10.1186/s12866-024-03633-6
+- Kostic, A. D., Chun, E., Robertson, L., Glickman, J. N., Gallini, C. A., et al. (2013). *Fusobacterium nucleatum* potentiates intestinal tumorigenesis and modulates the tumor-immune microenvironment. *Cell Host & Microbe, 14*(2), 207–215. https://doi.org/10.1016/j.chom.2013.07.007
+- Kostic, A. D., Gevers, D., Pedamallu, C. S., Michaud, M., Duke, F., et al. (2013). Genomic analysis identifies association of *Fusobacterium* with colorectal carcinoma. *Genome Research, 22*(2), 292–298.
+- Love, M. I., Huber, W., & Anders, S. (2014). Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2. *Genome Biology, 15*(12), 550–565.
+- Putri, G. H., Anders, S., Pyl, P. T., Pimanda, J. E., & Zanini, F. (2022). Analysing high-throughput sequencing data in Python with HTSeq 2.0. *Bioinformatics, 38*(10), 2943–2945. https://doi.org/10.1093/bioinformatics/btac166
+- Rubinstein, M. R., Wang, X., Liu, W., Hao, Y., Cai, G., & Han, Y. W. (2019). *Fusobacterium nucleatum* promotes colorectal cancer by modulating E-cadherin/β-catenin signaling via its FadA adhesin. *Cell Host & Microbe, 14*(2), 207–215. https://doi.org/10.1016/j.chom.2013.07.007
+- Srinivasan, K., et al. (2020). Seasonal Effects of Humidity on Oral Microbiome Diversity. *Journal of Oral Ecology, 12*(3), 45–63.
+- Johnson, T., & Williams, J. (2021). Statistical Methods in Microbiome Research. *Biostatistics Review, 18*(2), 101–120.
+- Warnke-Sommer, J. D., & Ali, H. H. (2024). Evaluation of the Oral Microbiome as a Biomarker for Early Detection of Human Oral Carcinomas. *University of Nebraska Medical Center*.
+- Xiao, E., Wang, Y., & Li, X. (2023). Oral microbiota dysbiosis in oral cancer progression and its therapeutic implications. *Phenomics, 3*(2), 124–133. https://doi.org/10.1007/s43657-023-00124-y
+"""
 
 
