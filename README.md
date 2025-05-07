@@ -27,6 +27,10 @@ The early data demonstrates that samples identified as oral carcinoma exhibit in
 ---
 
 ## Background
+Oral carcinoma is the most common head and neck cancer, but it remains a huge health concern because of its high incidence and high morbidity. New studies have pointed to the oral microbiome in oral cancer development and propose that microbiota can support tumorigenesis through a host of inflammatory and immune-modulatory mechanisms (Gopinath et al., 2020; Xiao et al., 2023). One of the taxa of microbes that are involved in this condition, Fusobacterium nucleatum, is most common in the oral biofilms of patients with cancer and has been found to cause inflammation and modulate immunity. It’s been shown that this bacterium makes a cancer-friendly microenvironment, via the activation of certain host immune systems, promoting inflammation and permitting tumorigenic states (Kostic et al., 2013; Rubinstein et al., 2019). There is evidence that Fusobacterium nucleatum might accelerate not just the cancer process but also other microbes to change host behavior, signaling and immunity (Kostic et al., 2013; Chandrababu & Bastola, 2022).
+
+It would be beneficial to have knowledge of these microbial changes, which could yield invaluable information about early detection signals or targets. Identifying certain bacterial signatures associated with oral carcinoma helps scientists map microbial biology to disease (Chattopadhyay, Verma, & Panda, 2019). These microbial differences may also be early detected to identify oral carcinoma in more curable stages, where bacterial biomarkers are non-invasive markers of disease activity. Furthermore, determining which bacteria best match cancer states may guide microbiome-based therapeutic treatments like probiotics or specific antimicrobial treatments that modify or even normalize the oral microbiome to mitigate the risk of cancer.
+
 The prevalence and deadly nature of oral carcinoma makes it one of the most widespread head and neck cancers worldwide. New research indicates that Fusobacterium nucleatum's dominance within the oral microbiome contributes to cancer development by affecting immune response and promoting inflammation. Analysis of microbial patterns creates a hopeful path for developing non-invasive diagnostic tools.
 
 This database project aims to develop a structured search environment that connects sample metadata information like health status to microbial signatures including k-mer frequency profiles obtained from oral microbiome DNA sequences. The system enables computational analysis to identify possible microbial biomarkers specific to oral cancer.
@@ -34,6 +38,9 @@ This database project aims to develop a structured search environment that conne
 This project holds importance because detecting oral carcinoma early stages improves treatment success rates. Traditional diagnostic procedures typically require invasive methods or incur high costs and remain inaccessible to many patients. Microbiome sequencing through computational data-driven methods creates scalable low-cost screening tools based on public 16S rRNA sequencing data which proves valuable for clinical research applications.
 
 This research project introduces a new methodology that analyzes Fusobacterium nucleatum in cancers through k-mer based profiling while storing results in a MySQL database and automating the analysis process with Bash scripting. The pipeline combines microbial bioinformatics principles with practical data engineering solutions in a modular open-source framework—an approach rarely discussed in the existing literature.
+
+## Research Question
+What are the differences in the k-mer frequency profiles associated with *Fusobacterium nucleatum* between individuals with oral carcinoma and healthy controls, and can these differences be used to support its role as a non-invasive microbial biomarker for early cancer detection?
 
 ---
 
