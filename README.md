@@ -1,4 +1,6 @@
-# Title: A Reproducible Pipeline for Identifying Fusobacterium nucleatum in Oral Microbiome Sequences Using k-mer Profiling and SQL Integration
+# A Reproducible Pipeline for Identifying Fusobacterium nucleatum in Oral Microbiome Sequences Using k-mer Profiling and SQL Integration
+
+---
 
 ## Abstract / Purpose
 Our project features a reproducible bioinformatics pipeline that investigates the oral microbiome for cancer biomarkers by specifically targeting Fusobacterium nucleatum (FN) which shows strong associations with oral carcinoma. The central research question is: K-mer frequency profiles from oral microbiome sequences could enable researchers to detect Fusobacterium nucleatum and determine its abundance as it relates to oral cancer.
@@ -15,10 +17,14 @@ The project delivers a proof-of-concept tool for detecting oral carcinoma biomar
 
 The early data demonstrates that samples identified as oral carcinoma exhibit increased relative frequencies of k-mer patterns connected to Fusobacterium nucleatum which suggests its usefulness as a diagnostic microbial marker.
 
+---
+
 ## Objectives / Goals
 1. Write a Python tool that analyzes k-mer frequencies within FASTA oral microbiome sequences to identify Fusobacterium nucleatum patterns.
 2. Create a MySQL database to store sample metadata together with k-mer frequencies that supports structured data queries and comparative analysis between cancer and control groups.
 3. By automating the entire pipeline through a Bash shell script you can process data inputs and populate databases while maintaining reproducibility and simplicity of use.
+
+---
 
 ## Background
 The prevalence and deadly nature of oral carcinoma makes it one of the most widespread head and neck cancers worldwide. New research indicates that Fusobacterium nucleatum's dominance within the oral microbiome contributes to cancer development by affecting immune response and promoting inflammation. Analysis of microbial patterns creates a hopeful path for developing non-invasive diagnostic tools.
@@ -28,6 +34,8 @@ This database project aims to develop a structured search environment that conne
 This project holds importance because detecting oral carcinoma early stages improves treatment success rates. Traditional diagnostic procedures typically require invasive methods or incur high costs and remain inaccessible to many patients. Microbiome sequencing through computational data-driven methods creates scalable low-cost screening tools based on public 16S rRNA sequencing data which proves valuable for clinical research applications.
 
 This research project introduces a new methodology that analyzes Fusobacterium nucleatum in cancers through k-mer based profiling while storing results in a MySQL database and automating the analysis process with Bash scripting. The pipeline combines microbial bioinformatics principles with practical data engineering solutions in a modular open-source framework—an approach rarely discussed in the existing literature.
+
+---
 
 ## Installation & Usage
 
@@ -88,6 +96,7 @@ This research project introduces a new methodology that analyzes Fusobacterium n
    - Executes the Python script.
    - Populates the SQL database using the generated CSV files.
   
+---
 
 ## References
 
