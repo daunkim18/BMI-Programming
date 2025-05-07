@@ -1,4 +1,19 @@
-## A Reproducible Pipeline for Identifying Fusobacterium nucleatum in Oral Microbiome Sequences Using k-mer Profiling and SQL Integration
+## Title: A Reproducible Pipeline for Identifying Fusobacterium nucleatum in Oral Microbiome Sequences Using k-mer Profiling and SQL Integration
+
+# Abstract / Purpose
+Our project features a reproducible bioinformatics pipeline that investigates the oral microbiome for cancer biomarkers by specifically targeting Fusobacterium nucleatum (FN) which shows strong associations with oral carcinoma. The central research question is: K-mer frequency profiles from oral microbiome sequences could enable researchers to detect Fusobacterium nucleatum and determine its abundance as it relates to oral cancer.
+
+The solution comprises three fundamental components which work together in the pipeline.
+
+This Python script analyzes microbiome sequences from FASTA format to produce k-mer frequency profiles.
+
+The MySQL database contains both sample metadata and k-mer results to support structured queries and analytical tasks.
+
+This Bash shell script manages the entire process from initial input through to database storage.
+
+The project delivers a proof-of-concept tool for detecting oral carcinoma biomarkers through streamlined oral microbiome analysis using a modular and reproducible method.
+
+The early data demonstrates that samples identified as oral carcinoma exhibit increased relative frequencies of k-mer patterns connected to Fusobacterium nucleatum which suggests its usefulness as a diagnostic microbial marker.
 
 # Objectives
 1. Develop a Python script that calculates k-mer frequency profiles from FASTA-format oral microbiome sequences
