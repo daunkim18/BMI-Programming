@@ -4,7 +4,6 @@
 
 ---
 
----
 ## Abstract & Purpose
 Our project features a reproducible bioinformatics pipeline that investigates the oral microbiome for cancer biomarkers by specifically targeting Fusobacterium nucleatum (FN) which shows strong associations with oral carcinoma. The central research question is: K-mer frequency profiles from oral microbiome sequences could enable researchers to detect Fusobacterium nucleatum and determine its abundance as it relates to oral cancer.
 
@@ -20,13 +19,14 @@ The project delivers a proof-of-concept tool for detecting oral carcinoma biomar
 
 The early data demonstrates that samples identified as oral carcinoma exhibit increased relative frequencies of k-mer patterns connected to Fusobacterium nucleatum which suggests its usefulness as a diagnostic microbial marker.
 
+---
 
 ## Objectives & Goals
 1. Write a Python tool that analyzes k-mer frequencies within FASTA oral microbiome sequences to identify Fusobacterium nucleatum patterns.
 2. Create a MySQL database to store sample metadata together with k-mer frequencies that supports structured data queries and comparative analysis between cancer and control groups.
 3. By automating the entire pipeline through a Bash shell script you can process data inputs and populate databases while maintaining reproducibility and simplicity of use.
 
-
+---
 
 ## Background
 Oral carcinoma is the most common head and neck cancer, but it remains a huge health concern because of its high incidence and high morbidity. New studies have pointed to the oral microbiome in oral cancer development and propose that microbiota can support tumorigenesis through a host of inflammatory and immune-modulatory mechanisms (Gopinath et al., 2020; Xiao et al., 2023). One of the taxa of microbes that are involved in this condition, Fusobacterium nucleatum, is most common in the oral biofilms of patients with cancer and has been found to cause inflammation and modulate immunity. It’s been shown that this bacterium makes a cancer-friendly microenvironment, via the activation of certain host immune systems, promoting inflammation and permitting tumorigenic states (Kostic et al., 2013; Rubinstein et al., 2019). There is evidence that Fusobacterium nucleatum might accelerate not just the cancer process but also other microbes to change host behavior, signaling and immunity (Kostic et al., 2013; Chandrababu & Bastola, 2022).
@@ -44,7 +44,7 @@ This research project introduces a new methodology that analyzes Fusobacterium n
 ## Research Question
 What are the differences in the k-mer frequency profiles associated with *Fusobacterium nucleatum* between individuals with oral carcinoma and healthy controls, and can these differences be used to support its role as a non-invasive microbial biomarker for early cancer detection?
 
-
+---
 
 ## Installation & Usage
 
@@ -116,7 +116,7 @@ The Human Microbiome Project supplies de-identified 16S rRNA sequencing data wit
   [https://www.kaggle.com/](https://www.kaggle.com/)
 You can find the Human Oral Microbiome dataset among Kaggle's public datasets. Public individuals upload these datasets to Kaggle where they can be accessed for research and educational use according to Kaggle's data use guidelines.
 
-
+---
 
 ## Users
 The project serves the following groups:
@@ -133,7 +133,7 @@ The project serves the following groups:
 - People who possess technical knowledge about Python or SQL programming are included in this context.
 - This tool serves as a foundational resource for researchers who want to investigate non-invasive diagnostic methods or merge data with existing public health datasets.
 
-
+---
 
 ## Implementation Constraints
 - **Data Source Limitations**: Publicly available oral microbiome datasets serve as the foundation for this project. The presence of inconsistent metadata or limited annotations in these datasets affects the precision with which microbial signatures can be linked to disease status.
@@ -146,7 +146,7 @@ The project serves the following groups:
 
 - **Manual Integration Step**: The process of importing the SQL database from CSV files is semi-automated but may need manual checks due to MySQL settings and system access rights.
   
-
+---
 
 ## References
 
@@ -167,6 +167,8 @@ The project serves the following groups:
 - Warnke-Sommer, J. D., & Ali, H. H. (2024). Evaluation of the Oral Microbiome as a Biomarker for Early Detection of Human Oral Carcinomas. *University of Nebraska Medical Center*.
 - Xiao, E., Wang, Y., & Li, X. (2023). Oral microbiota dysbiosis in oral cancer progression and its therapeutic implications. *Phenomics, 3*(2), 124–133. https://doi.org/10.1007/s43657-023-00124-y
 
+---
+
 ## Privacy Statement
 
 The analysis in this project utilizes oral microbiome sequencing data that is publicly accessible from sources including the Human Microbiome Project and Kaggle.
@@ -175,6 +177,8 @@ The dataset contains no personal identifiers or protected health information (PH
 The project's MySQL database avoids HIPAA, FERPA, and other data privacy regulation requirements.
 
 The project is designed exclusively for educational and research activities and follows ethical guidelines when utilizing openly accessible data.
+
+---
 
 ## License
 
