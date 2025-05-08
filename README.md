@@ -17,7 +17,7 @@ The solution comprises three fundamental components which work together in the p
 - **oral_microbiome_schema.sql**: Defines the `bmi_project` database with two tables: `subject_metadata` and `genus_abundance`.
 
 ### 3. Shell Script
-- **pipeline.sh**: Automates the workflow. It:
+- **pipeline.sh**: Automates the workflow process. 
   1. Runs the import script,
   2. Executes the visualization script.
 
@@ -26,127 +26,106 @@ The project delivers a proof-of-concept tool for detecting depression biomarkers
 The early data demonstrates that samples identified as oral carcinoma exhibit increased relative frequencies of patterns connected to Prevotella which suggests its usefulness as a diagnostic microbial marker.
 
 ## Research Question
-What are the differences in the k-mer frequency profiles associated with *Fusobacterium nucleatum* between individuals with oral carcinoma and healthy controls, and can these differences be used to support its role as a non-invasive microbial biomarker for early cancer detection?
+How does the relative abundance of *Prevotella* differ between individuals with and without depression, and can this difference suggest a potential microbial biomarker for mental health screening?
 
 ---
 
 ## Objectives & Goals
-1. Write a Python tool that analyzes k-mer frequencies within FASTA oral microbiome sequences to identify Fusobacterium nucleatum patterns.
-2. Create a MySQL database to store sample metadata together with k-mer frequencies that supports structured data queries and comparative analysis between cancer and control groups.
-3. By automating the entire pipeline through a Bash shell script you can process data inputs and populate databases while maintaining reproducibility and simplicity of use.
+1. Build a Python-based importer to load microbiome data into MySQL.
+2. Define SQL schema linking metadata and genus abundance.
+3. Generate a visualization showing abundance differences in *Prevotella* between groups.
+4. Automate the full workflow using Bash for reproducibility.
 
 ---
 
 ## Background
-Oral carcinoma is the most common head and neck cancer, but it remains a huge health concern because of its high incidence and high morbidity. New studies have pointed to the oral microbiome in oral cancer development and propose that microbiota can support tumorigenesis through a host of inflammatory and immune-modulatory mechanisms (Gopinath et al., 2020; Xiao et al., 2023). One of the taxa of microbes that are involved in this condition, Fusobacterium nucleatum, is most common in the oral biofilms of patients with cancer and has been found to cause inflammation and modulate immunity. It’s been shown that this bacterium makes a cancer-friendly microenvironment, via the activation of certain host immune systems, promoting inflammation and permitting tumorigenic states (Kostic et al., 2013; Rubinstein et al., 2019). There is evidence that Fusobacterium nucleatum might accelerate not just the cancer process but also other microbes to change host behavior, signaling and immunity (Kostic et al., 2013; Chandrababu & Bastola, 2022).
+As one of the most widespread and lethal head and neck cancers globally oral squamous cell carcinoma (OSCC) continues to be diagnosed primarily at late stages because of insufficient early, non-invasive detection methods. Emerging microbiome research demonstrates how oral microbiota significantly impacts human health and disease development including cancer formation. The oral cavity hosts a complex microbiome ecosystem consisting of bacteria, viruses and fungi which maintains continuous interaction with the host immune system and mucosal surfaces to potentially serve as biomarkers for early cancer detection (Chattopadhyay et al., 2019; Xiao et al., 2023).
 
-It would be beneficial to have knowledge of these microbial changes, which could yield invaluable information about early detection signals or targets. Identifying certain bacterial signatures associated with oral carcinoma helps scientists map microbial biology to disease (Chattopadhyay, Verma, & Panda, 2019). These microbial differences may also be early detected to identify oral carcinoma in more curable stages, where bacterial biomarkers are non-invasive markers of disease activity. Furthermore, determining which bacteria best match cancer states may guide microbiome-based therapeutic treatments like probiotics or specific antimicrobial treatments that modify or even normalize the oral microbiome to mitigate the risk of cancer.
+Fusobacterium nucleatum stands out as a significant microbe associated with the development of oral and colorectal cancers among microbial taxa that impact cancer progression. Research demonstrates that this bacterium disrupts epithelial barriers and triggers immune responses and inflammation which together advance tumorigenesis (Rubinstein et al., 2019). Fusobacterium nucleatum enhances colorectal cancer progression through E-cadherin/β-catenin signaling activation and tumor microenvironment modulation (Kostic et al., 2013). Research into oral cancer reveals mechanisms that allow bacteria to establish environments conducive to malignant transformation using inflammatory pathways and immune evasion strategies (Chandrababu & Bastola, 2022; Gopinath et al., 2020).
 
-The prevalence and deadly nature of oral carcinoma makes it one of the most widespread head and neck cancers worldwide. New research indicates that Fusobacterium nucleatum's dominance within the oral microbiome contributes to cancer development by affecting immune response and promoting inflammation. Analysis of microbial patterns creates a hopeful path for developing non-invasive diagnostic tools.
+Microbial changes that result in microbiome dysbiosis can function as early indicators for cancer development. Changes in the abundance of specific microbial taxa occur during dysbiosis in cancer patients as shown by elevated levels of Prevotella and Fusobacterium compared to healthy individuals (Warnke-Sommer & Ali, 2024). The analysis of Prevotella bacterial genera composition and abundance helps researchers discover non-invasive biomarkers useful for diagnosis and prognosis. Biomarker development holds substantial value in areas lacking advanced medical resources and for patients who cannot access high-end imaging or biopsy methods.
 
-This database project aims to develop a structured search environment that connects sample metadata information like health status to microbial signatures including k-mer frequency profiles obtained from oral microbiome DNA sequences. The system enables computational analysis to identify possible microbial biomarkers specific to oral cancer.
+Our project investigates how to build a structured pipeline for oral microbiome data analysis through the use of open-source bioinformatics tools in response to this need. Our workflow combines Python's data processing capabilities with MySQL's structured storage solution and Bash scripting automation to achieve a lightweight and repeatable system. Users can import microbiome data from CSV files into a relational database and create visualizations of specific bacterial genus abundances such as Prevotella based on depression status through the pipeline. Even though our primary goal was cancer detection research we shifted our focus to mental health associations after discovering depression-labeled data from public datasets like Kaggle.
 
-This project holds importance because detecting oral carcinoma early stages improves treatment success rates. Traditional diagnostic procedures typically require invasive methods or incur high costs and remain inaccessible to many patients. Microbiome sequencing through computational data-driven methods creates scalable low-cost screening tools based on public 16S rRNA sequencing data which proves valuable for clinical research applications.
-
-This research project introduces a new methodology that analyzes Fusobacterium nucleatum in cancers through k-mer based profiling while storing results in a MySQL database and automating the analysis process with Bash scripting. The pipeline combines microbial bioinformatics principles with practical data engineering solutions in a modular open-source framework—an approach rarely discussed in the existing literature.
+Accessible sequencing data paired with computational tools enables researchers to discover significant biological patterns. This framework demonstrates scalability for larger studies of 16S rRNA or metagenomic data despite its current analysis being restricted to a small subset of rows. This system facilitates future research targeting the discovery of microbiota-based disease biomarkers while enhancing early detection methods and developing digital infrastructure essential for precision medicine based on microbiome data.
 
 ---
 
 ## Installation & Usage
-
 ### Prerequisites
-
 - Python 3.x
-- MySQL server
+- MySQL Server
 - Bash shell
-- Required Python packages: `pandas`, `argparse`
+- Install required Python packages:
+  ```bash
+  pip install mysql-connector-python pandas matplotlib sqlalchemy
+  ```
 
 ### Step-by-Step
-
-1. **Create MySQL database**
+1. **Create MySQL Database**
    ```bash
-   mysql -u root -p
-   CREATE DATABASE bmi_project;
+   mysql -u root -p < oral_microbiome_schema.sql
    ```
 
-2. **Make the script executable**
+2. **Make Bash script executable**
    ```bash
-   chmod +x run_pipeline.sh
+   chmod +x pipeline.sh
    ```
 
 3. **Run the pipeline**
    ```bash
-   ./run_pipeline.sh
+   ./pipeline.sh
    ```
 
 ---
 
 ## Output
-
-- CSV file with k-mer frequency table
-- Logs printed to console with summary statistics
-- SQL tables `Sample_Metadata` and `Kmer_Frequencies` populated
+- MySQL database with 2 tables populated:
+  - `subject_metadata`
+  - `genus_abundance`
+- CSV output (optional)
+- Box plot comparing *Prevotella* abundance between depression groups
 
 ---
 
 ## Project Component
-1. **Python Script**
-   - Reads FASTA files.
-   - Accepts user input for k-mer length.
-   - Calculates k-mer frequencies.
-   - Logs:
-     - Number of sequences processed.
-     - Coverage status.
+### 1. Python Scripts
+- Import CSV to database 
+- Plot *Prevotella* genus abundance using `matplotlib`
 
-2. **SQL File**
-   - Contains all necessary DDL (Data Definition Language) statements to:
-     - Create two tables: one for sample metadata and one for k-mer frequencies.
-   - Contains DML (Data Manipulation Language) statements to:
-     - Populate the tables using data generated from the Python script.
+### 2. SQL File
+- Creates `bmi_project` database
+- Defines table structure to hold metadata and genus abundance
 
-3. **Bash Script**
-   - Prompts the user to:
-     - Enter the input FASTA file path.
-     - Specify the desired k-mer size.
-   - Executes the Python script.
-   - Populates the SQL database using the generated CSV files.
+### 3. Bash Script
+- Run the full pipeline
 
 ---
 
 ## Data Provenance
-- **Kaggle Oral Microbiome Dataset:**  
-  [https://www.kaggle.com/](https://www.kaggle.com/)
-You can find the Human Oral Microbiome dataset among Kaggle's public datasets. Public individuals upload these datasets to Kaggle where they can be accessed for research and educational use according to Kaggle's data use guidelines.
+- Dataset Source: [Kaggle - Oral Microbiome in Depression and Non-Depression](https://www.kaggle.com/datasets/forestlan/oral-microbiome)
+- The dataset is public and fully anonymized.
 
 ---
 
-## Users
-The project serves the following groups:
 
-1. **Bioinformatics Students and Educators**  
-- The project provides practical experience with microbiome data analysis techniques and SQL database design along with bash scripting automation.
-- Educational setting: coursework, labs, and reproducibility exercises.
-
-2. **Early-Career Researchers in Microbial Genomics or Oncology**  
-- People who want to find microbial biomarkers and study how microbiome composition relates to various diseases.
-- Researchers can use this tool during initial exploration projects or proof-of-concept testing.
-
-3. **Healthcare Data Science Enthusiasts**  
-- People who possess technical knowledge about Python or SQL programming are included in this context.
-- This tool serves as a foundational resource for researchers who want to investigate non-invasive diagnostic methods or merge data with existing public health datasets.
+## Target Users
+- **Bioinformatics Students**: Apply SQL, scripting, and visualization in a unified workflow.
+- **Researchers in Microbiome & Mental Health**: Prototype and explore microbial biomarkers.
+- **Data Science Practitioners**: Extend the project to other public microbiome datasets or integrate with external clinical data.
 
 ---
 
 ## Implementation Constraints
 - **Data Source Limitations**: Publicly available oral microbiome datasets serve as the foundation for this project. The presence of inconsistent metadata or limited annotations in these datasets affects the precision with which microbial signatures can be linked to disease status.
 
-- **Computational Constraints**: The analysis of k-mer frequencies demands substantial memory resources when working with large FASTA files. This pipeline functions optimally with small to medium datasets which are appropriate for educational and research prototype applications but unsuitable for extensive clinical deployment. Not designed for high-throughput or clinical-scale datasets.
+- **Computational Constraints**: This pipeline functions optimally with small to medium datasets which are appropriate for educational and research prototype applications but unsuitable for extensive clinical deployment. Not designed for high-throughput or clinical-scale datasets. Only supports small datasets in demonstration mode.
 
 - **Tooling Scope**: The project relies on fundamental Python programming, MySQL database management and Bash scripting. Command-line only; no web or graphical interface.
 
-- **No Clinical Validation**: The project incorporates Fusobacterium nucleatum as a biological marker but lacks clinical trial data and validated diagnostic standards. This project serves solely as a demonstration and learning tool.
+- **No Clinical Validation**: The project incorporates Prevotella as a biological marker but lacks clinical trial data and validated diagnostic standards. This project serves solely as a demonstration and learning tool. Not clinically validated.
 
-- **Manual Integration Step**: The process of importing the SQL database from CSV files is semi-automated but may need manual checks due to MySQL settings and system access rights.
+- **Manual Integration Step**: The process of importing the SQL database from CSV files is semi-automated but may need manual checks due to MySQL settings and system access rights. MySQL setup may require admin access.
   
 ---
 
