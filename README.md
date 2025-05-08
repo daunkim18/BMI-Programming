@@ -1,5 +1,8 @@
-# BMI8540 Project 
-# A Reproducible Pipeline for Identifying Fusobacterium nucleatum in Oral Microbiome Sequences Using k-mer Profiling and SQL Integration
+### A Reproducible Pipeline for Identifying *Fusobacterium nucleatum* in Oral Microbiome Sequences Using k-mer Profiling and SQL Integration  
+**Author: Daun Kim**  
+**Course: BMI 8540 – Final Project**
+
+---
 
 ---
 ## Abstract & Purpose
@@ -70,7 +73,7 @@ What are the differences in the k-mer frequency profiles associated with *Fusoba
    ./run_pipeline.sh
    ```
 
-
+---
 
 ## Output
 
@@ -78,7 +81,7 @@ What are the differences in the k-mer frequency profiles associated with *Fusoba
 - Logs printed to console with summary statistics
 - SQL tables `Sample_Metadata` and `Kmer_Frequencies` populated
 
-
+---
 
 ## Project Component
 1. **Python Script**
@@ -102,13 +105,16 @@ What are the differences in the k-mer frequency profiles associated with *Fusoba
    - Executes the Python script.
    - Populates the SQL database using the generated CSV files.
 
+---
 
 ## Data Provenance
-- The Human Microbiome Project (HMP): https://portal.hmpdacc.org/
+- **Human Microbiome Project (HMP):**  
+  [https://portal.hmpdacc.org/](https://portal.hmpdacc.org/)
 The Human Microbiome Project supplies de-identified 16S rRNA sequencing data with metadata that encompasses oral cavity samples along with health status information.
 
-- You can find the Human Oral Microbiome dataset among Kaggle's public datasets at https://www.kaggle.com/.
-Public individuals upload these datasets to Kaggle where they can be accessed for research and educational use according to Kaggle's data use guidelines.
+- **Kaggle Oral Microbiome Dataset:**  
+  [https://www.kaggle.com/](https://www.kaggle.com/)
+You can find the Human Oral Microbiome dataset among Kaggle's public datasets. Public individuals upload these datasets to Kaggle where they can be accessed for research and educational use according to Kaggle's data use guidelines.
 
 
 
@@ -132,12 +138,11 @@ The project serves the following groups:
 ## Implementation Constraints
 - **Data Source Limitations**: Publicly available oral microbiome datasets serve as the foundation for this project. The presence of inconsistent metadata or limited annotations in these datasets affects the precision with which microbial signatures can be linked to disease status.
 
-- **Computational Constraints**: The analysis of k-mer frequencies demands substantial memory resources when working with large FASTA files. This pipeline functions optimally with small to medium datasets which are appropriate for educational and research prototype applications but unsuitable for extensive clinical deployment.
+- **Computational Constraints**: The analysis of k-mer frequencies demands substantial memory resources when working with large FASTA files. This pipeline functions optimally with small to medium datasets which are appropriate for educational and research prototype applications but unsuitable for extensive clinical deployment. Not designed for high-throughput or clinical-scale datasets.
 
-- **Tooling Scope**: The project relies on fundamental Python programming, MySQL database management and Bash scripting without incorporating cloud deployment or complex workflow management systems like Snakemake or Nextflow.
+- **Tooling Scope**: The project relies on fundamental Python programming, MySQL database management and Bash scripting. Command-line only; no web or graphical interface.
 
 - **No Clinical Validation**: The project incorporates Fusobacterium nucleatum as a biological marker but lacks clinical trial data and validated diagnostic standards. This project serves solely as a demonstration and learning tool.
-
 
 - **Manual Integration Step**: The process of importing the SQL database from CSV files is semi-automated but may need manual checks due to MySQL settings and system access rights.
   
