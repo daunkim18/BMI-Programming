@@ -1,4 +1,4 @@
-# Oral Microbiome Genus-Level Analysis for Depression Using SQL and Python 
+# A Reproducible SQL-Driven Pipeline for Oral Microbiome Analysis and Visualization of Genus-Level Biomarkers in Depression 
 **Author: Daun Kim**  
 **Course: BMI 8540 – Final Project**
 
@@ -83,7 +83,7 @@ Accessible sequencing data paired with computational tools enables researchers t
 - MySQL database with 2 tables populated:
   - `subject_metadata`
   - `genus_abundance`
-- CSV output (optional)
+- CSV output 
 - Box plot comparing *Prevotella* abundance between depression groups
 
 ---
