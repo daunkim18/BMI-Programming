@@ -1,4 +1,4 @@
-### A Reproducible Pipeline for Identifying *Fusobacterium nucleatum* in Oral Microbiome Sequences Using k-mer Profiling and SQL Integration  
+# A Reproducible Pipeline for Identifying *Fusobacterium nucleatum* in Oral Microbiome Sequences Using k-mer Profiling and SQL Integration  
 **Author: Daun Kim**  
 **Course: BMI 8540 – Final Project**
 
