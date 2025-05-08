@@ -19,6 +19,9 @@ The project delivers a proof-of-concept tool for detecting oral carcinoma biomar
 
 The early data demonstrates that samples identified as oral carcinoma exhibit increased relative frequencies of k-mer patterns connected to Fusobacterium nucleatum which suggests its usefulness as a diagnostic microbial marker.
 
+## Research Question
+What are the differences in the k-mer frequency profiles associated with *Fusobacterium nucleatum* between individuals with oral carcinoma and healthy controls, and can these differences be used to support its role as a non-invasive microbial biomarker for early cancer detection?
+
 ---
 
 ## Objectives & Goals
@@ -40,9 +43,6 @@ This database project aims to develop a structured search environment that conne
 This project holds importance because detecting oral carcinoma early stages improves treatment success rates. Traditional diagnostic procedures typically require invasive methods or incur high costs and remain inaccessible to many patients. Microbiome sequencing through computational data-driven methods creates scalable low-cost screening tools based on public 16S rRNA sequencing data which proves valuable for clinical research applications.
 
 This research project introduces a new methodology that analyzes Fusobacterium nucleatum in cancers through k-mer based profiling while storing results in a MySQL database and automating the analysis process with Bash scripting. The pipeline combines microbial bioinformatics principles with practical data engineering solutions in a modular open-source framework—an approach rarely discussed in the existing literature.
-
-## Research Question
-What are the differences in the k-mer frequency profiles associated with *Fusobacterium nucleatum* between individuals with oral carcinoma and healthy controls, and can these differences be used to support its role as a non-invasive microbial biomarker for early cancer detection?
 
 ---
 
