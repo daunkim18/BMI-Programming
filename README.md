@@ -1,23 +1,29 @@
-# A Reproducible Pipeline for Identifying *Fusobacterium nucleatum* in Oral Microbiome Sequences Using k-mer Profiling and SQL Integration  
+# Oral Microbiome Genus-Level Analysis for Depression Using SQL and Python 
 **Author: Daun Kim**  
 **Course: BMI 8540 – Final Project**
 
 ---
 
 ## Abstract & Purpose
-Our project features a reproducible bioinformatics pipeline that investigates the oral microbiome for cancer biomarkers by specifically targeting Fusobacterium nucleatum (FN) which shows strong associations with oral carcinoma. The central research question is: K-mer frequency profiles from oral microbiome sequences could enable researchers to detect Fusobacterium nucleatum and determine its abundance as it relates to oral cancer.
+Our project features a reproducible bioinformatics pipeline which imports oral microbiome data from a CSV file into a MySQL database to create a visualization of Prevotella genus abundance among depressed and non-depressed individuals.
 
 The solution comprises three fundamental components which work together in the pipeline.
 
-1. Python script analyzes microbiome sequences from FASTA format to produce k-mer frequency profiles.
+### 1. Python Scripts
+- **import_microbiome_csv.py**: Loads selected rows from `oral_microbiome.csv` into the MySQL database.
+- **visualize_prevotella.py**: Generates a box plot showing Prevotella abundance based on depression status.
 
-2. MySQL database contains both sample metadata and k-mer results to support structured queries and analytical tasks.
+### 2. SQL Schema
+- **oral_microbiome_schema.sql**: Defines the `bmi_project` database with two tables: `subject_metadata` and `genus_abundance`.
 
-3. Bash shell script manages the entire process from initial input through to database storage.
+### 3. Shell Script
+- **pipeline.sh**: Automates the workflow. It:
+  1. Runs the import script,
+  2. Executes the visualization script.
 
-The project delivers a proof-of-concept tool for detecting oral carcinoma biomarkers through streamlined oral microbiome analysis using a modular and reproducible method.
+The project delivers a proof-of-concept tool for detecting depression biomarkers through streamlined oral microbiome analysis using a modular and reproducible method.
 
-The early data demonstrates that samples identified as oral carcinoma exhibit increased relative frequencies of k-mer patterns connected to Fusobacterium nucleatum which suggests its usefulness as a diagnostic microbial marker.
+The early data demonstrates that samples identified as oral carcinoma exhibit increased relative frequencies of patterns connected to Prevotella which suggests its usefulness as a diagnostic microbial marker.
 
 ## Research Question
 What are the differences in the k-mer frequency profiles associated with *Fusobacterium nucleatum* between individuals with oral carcinoma and healthy controls, and can these differences be used to support its role as a non-invasive microbial biomarker for early cancer detection?
@@ -108,10 +114,6 @@ This research project introduces a new methodology that analyzes Fusobacterium n
 ---
 
 ## Data Provenance
-- **Human Microbiome Project (HMP):**  
-  [https://portal.hmpdacc.org/](https://portal.hmpdacc.org/)
-The Human Microbiome Project supplies de-identified 16S rRNA sequencing data with metadata that encompasses oral cavity samples along with health status information.
-
 - **Kaggle Oral Microbiome Dataset:**  
   [https://www.kaggle.com/](https://www.kaggle.com/)
 You can find the Human Oral Microbiome dataset among Kaggle's public datasets. Public individuals upload these datasets to Kaggle where they can be accessed for research and educational use according to Kaggle's data use guidelines.
