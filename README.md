@@ -11,7 +11,7 @@ The `import_microbiome_csv.py` script extracts selected rows from the large `ora
  
 ![image](https://github.com/user-attachments/assets/1587cbd1-7c04-4de9-9604-7cbf136ba062)
 
-Initial results from this limited demonstration indicate a higher median level of Prevotella among people categorized with “Depression” than those without depression which indicates potential for further research into Prevotella as a non-invasive microbial biomarker for mental health conditions. This project demonstrates the combined application of Python, SQL, and Bash foundational tools to perform valuable biomedical informatics analyses.
+Initial results from this limited demonstration indicate a higher median level of Prevotella among people categorized with depression than those without depression which indicates potential for further research into Prevotella as a non-invasive microbial biomarker for mental health conditions. This project demonstrates the combined application of Python, SQL, and Bash foundational tools to perform valuable biomedical informatics analyses.
 
 The project delivers a proof-of-concept tool for detecting depression biomarkers through streamlined oral microbiome analysis using a modular and reproducible method. The early data demonstrates that samples identified as oral carcinoma exhibit increased relative frequencies of patterns connected to Prevotella which suggests its usefulness as a diagnostic microbial marker.
 
