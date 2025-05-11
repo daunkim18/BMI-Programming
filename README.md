@@ -44,8 +44,7 @@ How does the relative abundance of *Prevotella* differ between individuals with 
 
 ## Background
 
-![image](https://github.com/user-attachments/assets/d227ea4d-2d88-4e9b-8ba1-d9831f67a2f8)
-Source: ScienceDirect Topics on Prevotella
+
 
 As one of the most widespread and lethal head and neck cancers globally oral squamous cell carcinoma (OSCC) continues to be diagnosed primarily at late stages because of insufficient early, non-invasive detection methods. Emerging microbiome research demonstrates how oral microbiota significantly impacts human health and disease development including cancer formation. The oral cavity hosts a complex microbiome ecosystem consisting of bacteria, viruses and fungi which maintains continuous interaction with the host immune system and mucosal surfaces to potentially serve as biomarkers for early cancer detection (Chattopadhyay et al., 2019; Xiao et al., 2023).
 
@@ -56,6 +55,9 @@ Microbial changes that result in microbiome dysbiosis can function as early indi
 Our project investigates how to build a structured pipeline for oral microbiome data analysis through the use of open-source bioinformatics tools in response to this need. Our workflow combines Python's data processing capabilities with MySQL's structured storage solution and Bash scripting automation to achieve a lightweight and repeatable system. Users can import microbiome data from CSV files into a relational database and create visualizations of specific bacterial genus abundances such as Prevotella based on depression status through the pipeline. Even though our primary goal was cancer detection research we shifted our focus to mental health associations after discovering depression-labeled data from public datasets like Kaggle.
 
 Accessible sequencing data paired with computational tools enables researchers to discover significant biological patterns. This framework demonstrates scalability for larger studies of 16S rRNA or metagenomic data despite its current analysis being restricted to a small subset of rows. This system facilitates future research targeting the discovery of microbiota-based disease biomarkers while enhancing early detection methods and developing digital infrastructure essential for precision medicine based on microbiome data.
+
+![image](https://github.com/user-attachments/assets/d227ea4d-2d88-4e9b-8ba1-d9831f67a2f8)
+Source: ScienceDirect Topics on Prevotella
 
 ---
 
