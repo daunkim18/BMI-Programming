@@ -86,11 +86,14 @@ Accessible sequencing data paired with computational tools enables researchers t
 ## Output
 - MySQL database
 
+
+![image](https://github.com/user-attachments/assets/8f5beb79-fa4a-40c0-a740-7c4b1a8d70ac)
   
 ![image](https://github.com/user-attachments/assets/0d243c1d-026f-4b52-a516-c1fa094da02c)
 
 - CSV output 
 - Box plot comparing *Prevotella* abundance between depression groups
+
 ![image](https://github.com/user-attachments/assets/6606aed7-c616-47a4-ab02-80af32d8019d)
 
 ---
