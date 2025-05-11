@@ -43,6 +43,10 @@ How does the relative abundance of *Prevotella* differ between individuals with 
 ---
 
 ## Background
+
+![image](https://github.com/user-attachments/assets/d227ea4d-2d88-4e9b-8ba1-d9831f67a2f8)
+Source: ScienceDirect Topics on Prevotella
+
 As one of the most widespread and lethal head and neck cancers globally oral squamous cell carcinoma (OSCC) continues to be diagnosed primarily at late stages because of insufficient early, non-invasive detection methods. Emerging microbiome research demonstrates how oral microbiota significantly impacts human health and disease development including cancer formation. The oral cavity hosts a complex microbiome ecosystem consisting of bacteria, viruses and fungi which maintains continuous interaction with the host immune system and mucosal surfaces to potentially serve as biomarkers for early cancer detection (Chattopadhyay et al., 2019; Xiao et al., 2023).
 
 Fusobacterium nucleatum stands out as a significant microbe associated with the development of oral and colorectal cancers among microbial taxa that impact cancer progression. Research demonstrates that this bacterium disrupts epithelial barriers and triggers immune responses and inflammation which together advance tumorigenesis (Rubinstein et al., 2019). Fusobacterium nucleatum enhances colorectal cancer progression through E-cadherin/β-catenin signaling activation and tumor microenvironment modulation (Kostic et al., 2013). Research into oral cancer reveals mechanisms that allow bacteria to establish environments conducive to malignant transformation using inflammatory pathways and immune evasion strategies (Chandrababu & Bastola, 2022; Gopinath et al., 2020).
