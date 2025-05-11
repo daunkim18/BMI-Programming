@@ -84,9 +84,7 @@ Accessible sequencing data paired with computational tools enables researchers t
 ---
 
 ## Output
-- MySQL database with 2 tables populated:
-  - `subject_metadata`
-  - `genus_abundance`
+- MySQL database 
 ![image](https://github.com/user-attachments/assets/0d243c1d-026f-4b52-a516-c1fa094da02c)
 
 - CSV output 
