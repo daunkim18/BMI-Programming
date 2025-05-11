@@ -124,6 +124,8 @@ Source: ScienceDirect Topics on Prevotella
 ### 3. Bash Script
 - Run the full pipeline
 
+![image](https://github.com/user-attachments/assets/0227b150-de80-4180-a359-e708b5887fa6)
+
 ---
 
 ## Data Provenance
