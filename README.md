@@ -56,10 +56,15 @@ Accessible sequencing data paired with computational tools enables researchers t
 ---
 
 ## Installation & Usage
-### Prerequisites
+### Dependencies
 - Python 3.x
 - MySQL Server
 - Bash shell
+- mysql-connector-python==9.3.0
+- SQLAlchemy==2.0.40
+- pandas
+- matplotlib
+
 - Install required Python packages:
   ```bash
   pip install mysql-connector-python pandas matplotlib sqlalchemy
