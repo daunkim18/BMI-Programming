@@ -4,7 +4,7 @@ import mysql.connector  # connect to the MySQL database
 
 # If the user forgets to give a CSV file when running the script, show how to use it and exit
 if len(sys.argv) < 2:
-    print("Usage: python import_microbiome_csv.py <csv_file>")
+    print("How to use: python import_microbiome_csv.py <csv_file>")
     sys.exit(1)
 
 csv_file = sys.argv[1]  # stores the file name given by the user
@@ -23,7 +23,7 @@ except Exception as e:
     print("Database connection failed:", e)
     sys.exit(1)
 
-print("Step 1: Importing microbiome data...")
+print("Step 1: Importing microbiome data")
 
 imported = 0  # keep count of how many were successfully imported
 

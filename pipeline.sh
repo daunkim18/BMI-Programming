@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # -------------------------------------------
-# This script automates the process of importing oral microbiome data
+# This automates the process of importing oral microbiome data
 # into a MySQL database and generating a visualization using Python.
 # -------------------------------------------
 

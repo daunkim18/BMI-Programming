@@ -1,5 +1,5 @@
-# This script connects to the MySQL database,
-# grabs data about the genus Prevotella,
+# This script connects to the MySQL database
+# grabs data about the genus Prevotella
 # and shows a boxplot comparing its abundance in people with and without depression.
 
 import pandas as pd
@@ -17,7 +17,7 @@ except Exception as e:
 # Load Prevotella data from database
 query = "SELECT s.depression_status, g.abundance FROM genus_abundance g JOIN subject_metadata s ON g.subject_id = s.subject_id WHERE g.genus_name = 'g__Prevotella'"
 try:
-    # Read the SQL result into a Pandas DataFrame
+    # Read the SQL result into Pandas DataFrame
     df = pd.read_sql(query, conn)
 except Exception as e:
     print("Failed to load data:", e)
@@ -34,7 +34,7 @@ try:
     plt.suptitle("") # Removes the automatic title from panda
     plt.xlabel("Depression Status")
     plt.ylabel("Abundance")
-    plt.tight_layout() # Save the plot as a PNG file and also display it
+    plt.tight_layout() # Save the plot as a PNG file
     plt.savefig("prevotella_abundance_boxplot.png")
     plt.show()
 except Exception as e:
