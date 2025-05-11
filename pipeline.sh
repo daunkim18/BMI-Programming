@@ -1,33 +1,21 @@
 #!/bin/bash
 
-# Prompt user for input FASTA file and k-mer length
-read -p "Enter FASTA filename: " fasta_file
-read -p "Enter k-mer length (integer): " k
+# -------------------------------------------
+# This script automates the process of importing oral microbiome data
+# into a MySQL database and generating a visualization using Python.
+# -------------------------------------------
 
-# Run Python script
-echo "Running k-mer analysis..."
-python3 daunkim_microbiome_kmer.py "$fasta_file" "$k"
+echo "Starting microbiome data pipeline"
 
-# Confirm Python ran successfully
-if [ $? -ne 0 ]; then
-    echo "Python script failed. Exiting."
-    exit 1
-fi
+# Step 1: Import CSV into MySQL database
+# runs the Python script that loads the first 10 subjects from oral_microbiome.csv
+echo "Step 1: Importing CSV data into MySQL"
+python import_microbiome_csv.py oral_microbiome.csv
 
-# Ask for MySQL login
-read -p "Enter your MySQL username: " mysql_user
-read -s -p "Enter your MySQL password: " mysql_pass
-echo ""
+# Step 2: Generate a plot of Prevotella abundance
+# runs the Python script that connects to MySQL and creates a boxplot
+echo "Step 2: Generating visualization from MySQL data"
+python visualize_prevotella.py
 
-# Import CSV results into MySQL (requires table to already exist)
-echo "Loading k-mer data into MySQL..."
-mysql -u "$mysql_user" -p"$mysql_pass" -e "
-USE microbiome_project;
-LOAD DATA LOCAL INFILE 'kmer_output.csv'
-INTO TABLE kmer_frequencies
-FIELDS TERMINATED BY ',' 
-IGNORE 1 ROWS
-(kmer, frequency);
-"
-
-echo "Pipeline complete."
+# Final message when everything completes
+echo "Pipeline finished."
