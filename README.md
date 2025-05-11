@@ -57,6 +57,9 @@ Our project investigates how to build a structured pipeline for oral microbiome 
 Accessible sequencing data paired with computational tools enables researchers to discover significant biological patterns. This framework demonstrates scalability for larger studies of 16S rRNA or metagenomic data despite its current analysis being restricted to a small subset of rows. This system facilitates future research targeting the discovery of microbiota-based disease biomarkers while enhancing early detection methods and developing digital infrastructure essential for precision medicine based on microbiome data.
 
 ![image](https://github.com/user-attachments/assets/d227ea4d-2d88-4e9b-8ba1-d9831f67a2f8)
+
+![image](https://github.com/user-attachments/assets/41dae534-8105-4530-9386-136817633110)
+
 Source: ScienceDirect Topics on Prevotella
 
 ---
