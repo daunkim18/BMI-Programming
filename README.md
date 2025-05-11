@@ -5,28 +5,15 @@
 ---
 
 ## Abstract & Purpose
-Our project features a reproducible bioinformatics pipeline which imports oral microbiome data from a CSV file into a MySQL database to create a visualization of Prevotella genus abundance among depressed and non-depressed individuals.
+The project introduces a repeatable bioinformatics pipeline that processes oral microbiome information to evaluate its connection with mental health disorders with depression as the central focus. The main goal of this study is to show the variations in oral microbial composition between depressed individuals and healthy controls by examining the prevalence of the Prevotella genus. The pipeline integrates three key components: The project pipeline features Python scripts that manage data and create visualizations in conjunction with an SQL database schema for organized data storage and a Bash script designed to automate tasks.
 
-The solution comprises three fundamental components which work together in the pipeline.
-
-### 1. Python Scripts
-- **import_microbiome_csv.py**: Loads selected rows from `oral_microbiome.csv` into the MySQL database.
-- **visualize_prevotella.py**: Generates a box plot showing Prevotella abundance based on depression status.
-
-### 2. SQL Schema
-- **oral_microbiome_schema.sql**: Defines the `bmi_project` database with two tables: `subject_metadata` and `genus_abundance`.
-
-### 3. Shell Script
-- **pipeline.sh**: Automates the workflow process. 
-  1. Runs the import script,
-  2. Executes the visualization script.
+The import_microbiome_csv.py script extracts selected rows from the large oral_microbiome.csv file to load them into a MySQL database. The visualize_prevotella.py script accesses database information to generate a boxplot that compares the abundance of Prevotella between depressed and non-depressed individuals. The database itself is defined using the oral_microbiome_schema.sql file, which creates two tables: Subject_metadata table saves participant IDs alongside depression status information while genus_abundance table contains relative abundance data sorted by genus. The pipeline.sh script connects all components to provide an automated workflow that functions smoothly.
  
 ![image](https://github.com/user-attachments/assets/1587cbd1-7c04-4de9-9604-7cbf136ba062)
 
+Initial results from this limited demonstration indicate a higher median level of Prevotella among people categorized with “Depression” than those without depression which indicates potential for further research into Prevotella as a non-invasive microbial biomarker for mental health conditions. This project demonstrates the combined application of Python, SQL, and Bash foundational tools to perform valuable biomedical informatics analyses.
 
-The project delivers a proof-of-concept tool for detecting depression biomarkers through streamlined oral microbiome analysis using a modular and reproducible method.
-
-The early data demonstrates that samples identified as oral carcinoma exhibit increased relative frequencies of patterns connected to Prevotella which suggests its usefulness as a diagnostic microbial marker.
+The project delivers a proof-of-concept tool for detecting depression biomarkers through streamlined oral microbiome analysis using a modular and reproducible method. The early data demonstrates that samples identified as oral carcinoma exhibit increased relative frequencies of patterns connected to Prevotella which suggests its usefulness as a diagnostic microbial marker.
 
 ## Research Question
 How does the relative abundance of *Prevotella* differ between individuals with and without depression, and can this difference suggest a potential microbial biomarker for mental health screening?
