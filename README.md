@@ -20,6 +20,9 @@ The solution comprises three fundamental components which work together in the p
 - **pipeline.sh**: Automates the workflow process. 
   1. Runs the import script,
   2. Executes the visualization script.
+ 
+![image](https://github.com/user-attachments/assets/1587cbd1-7c04-4de9-9604-7cbf136ba062)
+
 
 The project delivers a proof-of-concept tool for detecting depression biomarkers through streamlined oral microbiome analysis using a modular and reproducible method.
 
@@ -35,6 +38,7 @@ How does the relative abundance of *Prevotella* differ between individuals with 
 2. Define SQL schema linking metadata and genus abundance.
 3. Generate a visualization showing abundance differences in *Prevotella* between groups.
 4. Automate the full workflow using Bash for reproducibility.
+![image](https://github.com/user-attachments/assets/df111a2f-4501-4688-a5d4-91f3f94b7d71)
 
 ---
 
