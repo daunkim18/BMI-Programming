@@ -116,8 +116,10 @@ Source: ScienceDirect Topics on Prevotella
 ---
 
 ## Data Provenance
+- I downloaded the dataset from Kaggle by accessing it directly as a CSV file.
 - Dataset Source: [Kaggle - Oral Microbiome in Depression and Non-Depression](https://www.kaggle.com/datasets/forestlan/oral-microbiome)
-- The dataset is public and fully anonymized.
+- The dataset is public and fully anonymized without including any personally identifiable information (PII) which assures adherence to standard privacy and ethical research standards.
+- The original contributors who posted the dataset on Kaggle retain ownership while permitting its reuse for non-commercial purposes including academic research and data science education. The use of this data did not require extra permissions and no preprocessing activities threatened subject privacy.
 
 ---
 
