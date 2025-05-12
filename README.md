@@ -47,7 +47,7 @@ Accessible sequencing data paired with computational tools enables researchers t
 
 ![image](https://github.com/user-attachments/assets/41dae534-8105-4530-9386-136817633110)
 
-Source: ScienceDirect Topics on Prevotella
+Image Source: ScienceDirect Topics on Prevotella
 
 ---
 
