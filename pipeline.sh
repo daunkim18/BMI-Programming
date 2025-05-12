@@ -1,21 +1,15 @@
 #!/bin/bash
 
-# -------------------------------------------
-# This automates the process of importing oral microbiome data
-# into a MySQL database and generating a visualization using Python.
-# -------------------------------------------
+# pipeline to load oral microbiome data into MySQL and generate a plot
 
-echo "Starting microbiome data pipeline"
+echo "Running microbiome data pipeline"
 
-# Step 1: Import CSV into MySQL database
-# runs the Python script that loads the first 10 subjects from oral_microbiome.csv
-echo "Step 1: Importing CSV data into MySQL"
+# Load first 10 subjects from the CSV into MySQL
+echo "Importing data from CSV."
 python import_microbiome_csv.py oral_microbiome.csv
 
-# Step 2: Generate a plot of Prevotella abundance
-# runs the Python script that connects to MySQL and creates a boxplot
-echo "Step 2: Generating visualization from MySQL data"
+# Create a boxplot of Prevotella abundance from the DB
+echo "Generating Prevotella plot"
 python visualize_prevotella.py
 
-# Final message when everything completes
-echo "Pipeline finished."
+echo "Done."

@@ -1,4 +1,3 @@
-
 DROP DATABASE IF EXISTS bmi_project;
 CREATE DATABASE bmi_project;
 USE bmi_project;
